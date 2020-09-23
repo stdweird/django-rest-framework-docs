@@ -5,7 +5,7 @@ setup(
     version=__import__('rest_framework_docs').__version__,
     author="Emmanouil Konstantinidis",
     author_email="manos@iamemmanouil.com",
-    packages=find_packages(),
+    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     include_package_data=True,
     url="http://www.drfdocs.com",
     license='BSD',
